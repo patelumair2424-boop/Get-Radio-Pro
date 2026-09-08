@@ -20,7 +20,7 @@ export function ContactForm() {
       <div className="glass-plate p-10 text-center">
         <h3 className="display text-3xl">Request received.</h3>
         <p className="mt-4 text-sm text-muted-foreground">
-          Thanks — a specialist will confirm your vehicle fitment and get back to you within one
+          Thanks - a specialist will confirm your vehicle fitment and get back to you within one
           business day.
         </p>
         <Button variant="outline" className="mt-8" onClick={() => setSent(false)}>

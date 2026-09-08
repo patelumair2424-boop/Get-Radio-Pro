@@ -11,7 +11,7 @@ import carplay from "@/assets/carplay.jpg";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Get Radio Pro — Car Audio & Infotainment Specialists" },
+      { title: "About Get Radio Pro - Car Audio & Infotainment Specialists" },
       {
         name: "description",
         content:
@@ -37,13 +37,13 @@ const STATS = [
 const PRINCIPLES = [
   {
     title: "Quality installation is the product",
-    body: "A great head unit fitted badly is a worse car. Every loom is soldered and heat-shrunk, every panel comes off with trim tools, and every job ends with a full function test — reverse trigger, chimes, wheel controls, the lot.",
+    body: "A great head unit fitted badly is a worse car. Every loom is soldered and heat-shrunk, every panel comes off with trim tools, and every job ends with a full function test - reverse trigger, chimes, wheel controls, the lot.",
     image: install,
     alt: "Technician carefully fitting a touchscreen head unit into a dashboard",
   },
   {
     title: "Technology chosen, not sold",
-    body: "We keep a short list of hardware we genuinely trust and spec from it. If your car only needs a Bluetooth module and better door speakers, that's what we'll quote — the upsell isn't the business model.",
+    body: "We keep a short list of hardware we genuinely trust and spec from it. If your car only needs a Bluetooth module and better door speakers, that's what we'll quote - the upsell isn't the business model.",
     image: carplay,
     alt: "Touchscreen showing a connected phone projection interface",
   },
@@ -91,7 +91,7 @@ function About() {
             </p>
             <p>
               We spent a decade learning how to close that gap without damaging what the
-              manufacturer got right — the ergonomics, the trim fit, the way the steering controls
+              manufacturer got right - the ergonomics, the trim fit, the way the steering controls
               fall under your thumb. Every build starts with the vehicle's own wiring diagram, not a
               universal harness.
             </p>

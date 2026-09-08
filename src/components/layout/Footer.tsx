@@ -11,7 +11,7 @@ export function Footer() {
         <div>
           <Logo />
           <p className="mt-6 max-w-sm text-sm leading-relaxed text-muted-foreground">
-            Get Radio Pro builds modern infotainment into everyday cars — factory-clean installs,
+            Get Radio Pro builds modern infotainment into everyday cars - factory-clean installs,
             wireless CarPlay and Android Auto, and audio that finally matches the drive.
           </p>
           <div className="mt-7 flex gap-3">

@@ -14,13 +14,13 @@ import workshop from "@/assets/workshop.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Get Radio Pro — Car Radio & Infotainment Upgrades" },
+      { title: "Get Radio Pro - Car Radio & Infotainment Upgrades" },
       {
         name: "description",
         content:
           "Modern car radio, touchscreen, CarPlay and audio upgrades installed to factory standard. Upgrade your drive with Get Radio Pro.",
       },
-      { property: "og:title", content: "Get Radio Pro — Upgrade Your Drive" },
+      { property: "og:title", content: "Get Radio Pro - Upgrade Your Drive" },
       {
         property: "og:description",
         content:
@@ -35,7 +35,7 @@ const VALUES = [
   {
     icon: Cpu,
     title: "Modern Technology",
-    body: "Current-generation head units, wireless projection and DSP processing — specced for your exact vehicle, never a one-size box.",
+    body: "Current-generation head units, wireless projection and DSP processing - specced for your exact vehicle, never a one-size box.",
   },
   {
     icon: Wrench,
@@ -68,7 +68,7 @@ function Home() {
             Your <span className="text-primary">Drive.</span>
           </>
         }
-        lead="We rebuild the way your car sounds and connects — modern touchscreens, wireless CarPlay and Android Auto, and audio engineered around your cabin."
+        lead="We rebuild the way your car sounds and connects - modern touchscreens, wireless CarPlay and Android Auto, and audio engineered around your cabin."
         image={hero}
         alt="Premium car interior at night with a glowing touchscreen infotainment display"
         actions={
@@ -207,7 +207,7 @@ function Home() {
               to a <span className="text-primary">connected cockpit.</span>
             </h2>
             <p className="mt-6 text-base leading-relaxed text-foreground/80 sm:text-lg">
-              A worn-out single-DIN radio, a tangle of aux cables and a phone wedged in a vent —
+              A worn-out single-DIN radio, a tangle of aux cables and a phone wedged in a vent -
               that's where most builds start. We strip it back, plan the fitment around your dash,
               and hand back a cabin that reads your maps, your calls and your music the second the
               door closes.

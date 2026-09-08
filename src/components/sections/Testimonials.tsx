@@ -7,7 +7,7 @@ const REVIEWS = [
     name: "Marcus Whelan",
     vehicle: "2016 Toyota Tacoma",
     quote:
-      "Wireless CarPlay in a truck that shipped with a CD player. The screen looks like it came from the factory — no gaps, no rattle, steering controls all still work.",
+      "Wireless CarPlay in a truck that shipped with a CD player. The screen looks like it came from the factory - no gaps, no rattle, steering controls all still work.",
   },
   {
     name: "Priya Raman",

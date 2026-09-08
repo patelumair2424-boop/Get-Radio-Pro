@@ -9,7 +9,7 @@ import carplay from "@/assets/carplay.jpg";
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Services — Car Radio, CarPlay & Audio Upgrades | Get Radio Pro" },
+      { title: "Services - Car Radio, CarPlay & Audio Upgrades | Get Radio Pro" },
       {
         name: "description",
         content:
@@ -19,7 +19,7 @@ export const Route = createFileRoute("/services")({
       {
         property: "og:description",
         content:
-          "Eight upgrade paths for a modern, connected cabin — installed to factory standard.",
+          "Eight upgrade paths for a modern, connected cabin - installed to factory standard.",
       },
     ],
   }),

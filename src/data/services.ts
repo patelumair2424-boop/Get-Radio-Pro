@@ -32,7 +32,7 @@ export const SERVICES: Service[] = [
     title: "Touchscreen Systems",
     index: "02",
     summary:
-      "Large, responsive capacitive displays fitted flush to your dash — no bulky brackets, no floating tablets, no rattles.",
+      "Large, responsive capacitive displays fitted flush to your dash - no bulky brackets, no floating tablets, no rattles.",
     benefits: ['7" to 12.3" displays', "Anti-glare bonded glass", "Custom dash fabrication"],
     image: dashboard,
     alt: "Modern widescreen touchscreen infotainment display in a premium dashboard",
@@ -42,7 +42,7 @@ export const SERVICES: Service[] = [
     title: "Apple CarPlay",
     index: "03",
     summary:
-      "Wired or wireless CarPlay with instant handover — maps, messages, music and Siri exactly where your eyes already are.",
+      "Wired or wireless CarPlay with instant handover - maps, messages, music and Siri exactly where your eyes already are.",
     benefits: ["Wireless auto-connect", "Steering wheel Siri", "Split-screen navigation"],
     image: carplay,
     alt: "Car touchscreen running a phone projection interface with navigation and music",
@@ -62,7 +62,7 @@ export const SERVICES: Service[] = [
     title: "Bluetooth & Audio Upgrades",
     index: "05",
     summary:
-      "Component speakers, amplifiers, subwoofers and DSP tuning — engineered around your cabin, not a generic box of parts.",
+      "Component speakers, amplifiers, subwoofers and DSP tuning - engineered around your cabin, not a generic box of parts.",
     benefits: ["DSP time alignment", "Sound-deadened doors", "Hands-free call clarity"],
     image: audio,
     alt: "Premium component speaker installed in a luxury car door panel",

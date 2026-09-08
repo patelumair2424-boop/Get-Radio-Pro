@@ -4,7 +4,7 @@ import nightDrive from "@/assets/night-drive.jpg";
 
 export function CTASection({
   title = "Your Drive Deserves Better.",
-  lead = "Book a free consultation and we'll spec the exact system for your vehicle — no guesswork, no upselling.",
+  lead = "Book a free consultation and we'll spec the exact system for your vehicle - no guesswork, no upselling.",
   label = "Get Started",
 }: {
   title?: string;

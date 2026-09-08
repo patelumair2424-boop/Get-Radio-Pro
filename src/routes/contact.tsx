@@ -9,13 +9,13 @@ import install from "@/assets/install.jpg";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Get Radio Pro — Request a Car Audio Upgrade" },
+      { title: "Contact Get Radio Pro - Request a Car Audio Upgrade" },
       {
         name: "description",
         content:
           "Tell us your vehicle make, model and year and we'll spec the right radio, touchscreen or audio upgrade. Free fitment consultation.",
       },
-      { property: "og:title", content: "Let's Upgrade Your Drive — Get Radio Pro" },
+      { property: "og:title", content: "Let's Upgrade Your Drive - Get Radio Pro" },
       {
         property: "og:description",
         content: "Book a free fitment consultation with the Get Radio Pro workshop.",
@@ -54,7 +54,7 @@ function Contact() {
               <p className="eyebrow">Workshop</p>
               <h2 className="display mt-4 text-3xl sm:text-4xl">Come see the bay.</h2>
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-                Walk-ins welcome for fitment checks — we'll take a look at your dash and tell you
+                Walk-ins welcome for fitment checks - we'll take a look at your dash and tell you
                 straight away what's possible.
               </p>
             </div>
