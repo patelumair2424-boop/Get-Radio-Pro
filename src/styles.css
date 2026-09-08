@@ -1,0 +1,208 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * GET RADIO PRO design system.
+ * Dark automotive-tech: charcoal surfaces, off-white type, single amber accent.
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 2px);
+  --radius-xl: calc(var(--radius) + 6px);
+
+  --font-display: "Barlow Condensed", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Archivo", ui-sans-serif, system-ui, sans-serif;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+}
+
+:root {
+  --radius: 0.25rem;
+
+  --background: oklch(0.14 0.004 60);
+  --foreground: oklch(0.96 0.005 90);
+  --surface: oklch(0.18 0.005 60);
+  --surface-2: oklch(0.23 0.006 60);
+
+  --card: oklch(0.18 0.005 60);
+  --card-foreground: oklch(0.96 0.005 90);
+  --popover: oklch(0.18 0.005 60);
+  --popover-foreground: oklch(0.96 0.005 90);
+
+  --primary: oklch(0.78 0.163 68);
+  --primary-foreground: oklch(0.16 0.01 60);
+
+  --secondary: oklch(0.23 0.006 60);
+  --secondary-foreground: oklch(0.96 0.005 90);
+
+  --muted: oklch(0.23 0.006 60);
+  --muted-foreground: oklch(0.68 0.008 70);
+
+  --accent: oklch(0.78 0.163 68);
+  --accent-foreground: oklch(0.16 0.01 60);
+
+  --destructive: oklch(0.6 0.21 25);
+  --destructive-foreground: oklch(0.98 0 0);
+
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 14%);
+  --ring: oklch(0.78 0.163 68 / 60%);
+
+  --gradient-veil: linear-gradient(
+    to top,
+    oklch(0.12 0.004 60) 0%,
+    oklch(0.12 0.004 60 / 0.72) 42%,
+    oklch(0.12 0.004 60 / 0.15) 100%
+  );
+  --gradient-side: linear-gradient(
+    to right,
+    oklch(0.12 0.004 60 / 0.95) 0%,
+    oklch(0.12 0.004 60 / 0.65) 45%,
+    oklch(0.12 0.004 60 / 0.1) 100%
+  );
+  --shadow-glow: 0 18px 60px -22px oklch(0.78 0.163 68 / 0.55);
+  --shadow-plate: 0 24px 70px -30px oklch(0 0 0 / 0.9);
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background: var(--color-primary);
+    color: var(--color-primary-foreground);
+  }
+}
+
+@utility display {
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  line-height: 0.92;
+}
+
+@utility eyebrow {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.32em;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+@utility veil {
+  background-image: var(--gradient-veil);
+}
+
+@utility veil-side {
+  background-image: var(--gradient-side);
+}
+
+@utility glass-plate {
+  background: color-mix(in oklab, var(--surface) 70%, transparent);
+  backdrop-filter: blur(14px);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-plate);
+}
+
+@utility hairline-grid {
+  background-image:
+    linear-gradient(to right, oklch(1 0 0 / 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, oklch(1 0 0 / 0.05) 1px, transparent 1px);
+  background-size: 84px 84px;
+}
+
+@utility reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+
+  &[data-visible="true"] {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes wave-bar {
+  0%,
+  100% {
+    transform: scaleY(0.25);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+@utility wave-bar {
+  transform-origin: bottom;
+  animation: wave-bar 1.4s ease-in-out infinite;
+}
+
+@keyframes sweep {
+  0% {
+    transform: translateX(-120%);
+  }
+  100% {
+    transform: translateX(220%);
+  }
+}
+
+@utility sweep-line {
+  animation: sweep 4.5s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
