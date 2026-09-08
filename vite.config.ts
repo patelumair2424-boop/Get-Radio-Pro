@@ -6,6 +6,7 @@ import { tanstackRouter } from "@tanstack/router-plugin/vite";
 // Single-page application: Vite + React + TanStack Router (file-based routes).
 // No SSR — `vite build` emits a static bundle served from index.html.
 export default defineConfig({
+  base: process.env.GITHUB_PAGES ? "/Get-Radio-Pro/" : "/",
   plugins: [tanstackRouter({ target: "react", autoCodeSplitting: true }), react(), tailwindcss()],
   resolve: {
     tsconfigPaths: true,
