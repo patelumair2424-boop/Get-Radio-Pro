@@ -4,7 +4,10 @@
     <meta charset="utf-8" />
     <title>Get Radio Pro</title>
     <script type="text/javascript">
-      var pathSegmentsToKeep = 1;
+      // GitHub Pages SPA fallback. Rewrites /some/route into /?/some/route so the
+      // custom-domain root serves index.html; index.html restores the real URL.
+      // 0 = site is served from the domain root (custom domain), not /<repo>/.
+      var pathSegmentsToKeep = 0;
       var l = window.location;
       l.replace(
         l.protocol +
